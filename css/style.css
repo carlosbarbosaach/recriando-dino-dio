@@ -1,0 +1,46 @@
+body {
+    background: #f3f3f3;
+
+}
+
+.dino {
+    background-image: url(../assets/dino.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    background-image: url(../assets/cactus.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+.game-over {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.342);
+    margin-top: 50px;
+    font-family: 'Roboto', cursive;
+}
+
+.background {
+    background-image: url(../assets/background.png);
+    position:absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: slideright 950s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
